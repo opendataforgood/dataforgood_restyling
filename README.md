@@ -1,20 +1,19 @@
-Telescope is an open-source, real-time social news site built with [Meteor](http://meteor.com)
+News aggregator for data-driven projects for social good (like Hacker News)
+Built on TelelescopeJS (http://telesc.pe) and meteorJS
 
-**Note:** Telescope is beta software. Most of it should work but it's still a little unpolished and you'll probably find some bugs. Use at your own risk :)
+Mac:
 
-Note that Telescope is distributed under the [MIT License](http://opensource.org/licenses/MIT)
+To Set up the application in your local system
 
-### Learn More
+1) Clone the repository
+2) Install Meteor using curl 
+	
+	https://install.meteor.com/ | sh
 
-- [Telescope Homepage](http://telesc.pe)
-- [Telescope Demo](http://demo2.telescopeapp.org)
-- [Telescope Documentation](http://telesc.pe/docs)
-- [Telescope Meta](http://meta.telesc.pe/) – Discussions about Telescope
+3) Install Meteorite to set up all the dependecies (assuming npm is already installed)
+	
+	npm install -g meteorite
 
-### Developing on Nitrous.IO
+4) Run the following command $mrt update
 
-Start hacking on this app on
-[Nitrous.IO](https://www.nitrous.io/?utm_source=github.com&utm_campaign=Telescope&utm_medium=hackonnitrous)
-in seconds:
-
-[![Hack TelescopeJS/Telescope on Nitrous.IO](https://d3o0mnbgv6k92a.cloudfront.net/assets/hack-l-v1-3cc067e71372f6045e1949af9d96095b.png)](https://www.nitrous.io/hack_button?source=embed&runtime=nodejs&repo=TelescopeJS%2FTelescope&file_to_open=README.nitrous.md)
+5) Run $meteor to run the application in your local system
