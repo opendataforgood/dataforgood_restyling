@@ -27,4 +27,5 @@ Some of the improvements planned for the next versions of Telescope. Email [hell
 
 These are things that won't be supported by Telescope's core, but would make good ideas for packages.
 
-- Image Upload (ability to upload an image or file with each post).
+- Image Upload (ability to upload an image or file with each post)
+test
