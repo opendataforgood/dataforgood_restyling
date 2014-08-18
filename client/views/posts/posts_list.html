@@ -1,14 +1,54 @@
 <template name="posts_list">
-  <div class="posts-wrapper grid">
-  	<div class="posts list">
-  		{{#each posts}}
-  			{{> UI.dynamic template=post_item}}
-  		{{/each}}
+  <section class="jumbotron">
+    <div class="container text-center">
+        <h2>Share data-driven projects for social good</h2>
+        <p><a class="btn btn-primary btn-lg" role="button">Post a project!</a></p>
+        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</p>
     </div>
-    {{#if hasMorePosts}}
-      <div class="more-button module">
-        <a href="{{loadMoreUrl}}">{{i18n "Load more"}}</a>
-      </div>
-    {{/if}}
-  </div>
+</section>
+<section class="nav hidden-xs" role="navigation">
+    <div class="container text-left">
+        <ul class="nav navbar-nav navbar-left">
+            <li class="active"><a href="#">Top</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Best</a></li>
+            <li><a href="#">Diggest</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Categories <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Category 1</a></li>
+                    <li><a href="#">Category 2</a></li>
+                    <li><a href="#">Category 3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div><!-- /.container -->
+</section>
+<section role="content">
+    <div class="container">
+        <article class="well">
+           <!-- mobile devices -->
+           <div class="row visible-xs-block">
+               <div class="col-xs-2">*</div>
+               <div class="col-xs-8">title</div>
+               <div class="col-xs-2">more</div>
+                <!-- todo: share on bottom -->
+           </div>
+           <!-- desktop devices -->
+           <div class="row hidden-xs">
+               <div class="col-sm-1">1</div>
+               <div class="col-sm-1">*</div>
+               <div class="col-sm-6">text</div>
+               <div class="col-sm-2">cat</div>
+               <div class="col-sm-1">share</div>
+               <div class="col-sm-1">dis</div>
+                   <!-- todo: share as popup -->
+           </div>
+        </article>
+    </div>
+</section>
 </template>

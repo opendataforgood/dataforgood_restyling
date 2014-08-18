@@ -1,33 +1,40 @@
 <template name="nav">
-  <header class="header">
-
-    <a id="mobile-menu" href="#menu" class="mobile mobile-button menu mobile-menu-button"><i class="icon-menu"></i><span>{{i18n "Menu"}}</span></a>
-
-    {{#if logo_url}}
-      <h1 class="logo logo-image">
-        <a href="/">
-          <img src="{{logo_url}}" alt="{{site_title}}"/>
-        </a>
-      </h1>
-    {{else}}
-      <h1 class="logo"><a href="/">{{site_title}}</a></h1>
-    {{/if}}
-
-    <ul class="nav site-nav desktop-nav has-dropdown">
-      {{#each navItems}}
-        <li>
-          {{> UI.dynamic template=this}}
-        </li>
-      {{/each}}
-    </ul>
-
-    <ul class="nav user-nav desktop-nav has-dropdown">
-      <li>{{> UI.dynamic template=userMenu}}</li>
-      {{#if canPost}}
-        <li><a id="submit" class="submit button" href="/submit">{{i18n "Post"}}</a></li>
-      {{/if}}
-    </ul>
-
-
-  </header>
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Data For Good</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            
+            <ul class="nav navbar-nav navbar-right">
+               {{#if isLoggedIn}}
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{i18n "Profile"}} <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="{{profileUrl}}">{{i18n "View Profile"}}</a></li>
+                        <li><a href="/sign-out">{{i18n "Sign Out"}}</a></li>
+                     </ul>
+                </li>
+                {{else}}
+                <li><a href="/sign-up">{{i18n "Sign Up"}}</a></li>
+                <li><a href="/sign-in">{{i18n "Sign In"}}</a></li>
+                {{/if}}
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
 </template>
+
+

@@ -20,7 +20,8 @@
       "synced-cron": {},
       "cookies": {},
       "telescope-newsletter": {},
-      "accounts-entry": {}
+      "accounts-entry": {},
+      "bootstrap-3": {}
     },
     "packages": {
       "momentjs": {
@@ -70,8 +71,8 @@
       },
       "bootstrap3-datepicker": {
         "git": "https://github.com/rajit/bootstrap3-datepicker.git",
-        "tag": "v0.2.1",
-        "commit": "442484eb1c8eb00c6b9e0e9c88accc934cf8f04a"
+        "tag": "v1.3.0-1",
+        "commit": "d28f9193f294890eb8d49f5f3b24e2f2a628e1fa"
       },
       "subs-manager": {
         "git": "https://github.com/meteorhacks/subs-manager.git",
@@ -110,13 +111,18 @@
       },
       "telescope-newsletter": {
         "git": "https://github.com/TelescopeJS/telescope-newsletter.git",
-        "tag": "v0.1.7",
-        "commit": "5f97c9cc3ed9d89c53a604a6fdf2ae07aa9f0f41"
+        "tag": "v0.1.8",
+        "commit": "dc8c72ee2879e95e511d836b923eebbe6e5d97b5"
       },
       "accounts-entry": {
         "git": "https://github.com/Differential/accounts-entry.git",
         "tag": "v0.8.0",
         "commit": "cf7f7d0ecc285824bc2748e305f5d693df99b4ae"
+      },
+      "bootstrap-3": {
+        "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
+        "tag": "v3.2.0-1",
+        "commit": "17a63902fc6cf1096c5289d963c66cf28b474727"
       },
       "iron-layout": {
         "git": "https://github.com/EventedMind/iron-layout.git",
@@ -135,8 +141,8 @@
       },
       "moment": {
         "git": "https://github.com/acreeger/meteor-moment.git",
-        "tag": "v2.6.0",
-        "commit": "26156df681750fd6e6ed77043eef32b6653ebbdf"
+        "tag": "v2.8.1",
+        "commit": "722ea63783d594341023836b7d418ab2567dab8c"
       },
       "accounts-t9n": {
         "git": "https://github.com/softwarerero/meteor-accounts-t9n.git",
