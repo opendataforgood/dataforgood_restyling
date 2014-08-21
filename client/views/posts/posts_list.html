@@ -2,7 +2,7 @@
   <section class="jumbotron">
     <div class="container text-center">
         <h2>Share data-driven projects for social good</h2>
-        <p><a class="btn btn-primary btn-lg" role="button">Post a project!</a></p>
+        <p><a class="btn btn-primary btn-lg" href="/submit" role="button">{{i18n "Post a Project!"}}</a></p>
         <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</p>
     </div>
 </section>
@@ -30,25 +30,14 @@
 </section>
 <section role="content">
     <div class="container">
-        <article class="well">
-           <!-- mobile devices -->
-           <div class="row visible-xs-block">
-               <div class="col-xs-2">*</div>
-               <div class="col-xs-8">title</div>
-               <div class="col-xs-2">more</div>
-                <!-- todo: share on bottom -->
-           </div>
-           <!-- desktop devices -->
-           <div class="row hidden-xs">
-               <div class="col-sm-1">1</div>
-               <div class="col-sm-1">*</div>
-               <div class="col-sm-6">text</div>
-               <div class="col-sm-2">cat</div>
-               <div class="col-sm-1">share</div>
-               <div class="col-sm-1">dis</div>
-                   <!-- todo: share as popup -->
-           </div>
-        </article>
+        {{#each posts}}
+            {{> UI.dynamic template=post_item}}
+        {{/each}}
     </div>
+    {{#if hasMorePosts}}
+      <div class="more-button module">
+        <a href="{{loadMoreUrl}}">{{i18n "Load more"}}</a>
+      </div>
+    {{/if}}
 </section>
 </template>
