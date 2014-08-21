@@ -1,31 +1,54 @@
 <template name="post_item">
-  <div class="post module {{rankClass}} {{#if sticky}}sticky{{/if}} {{inactiveClass}}" id="{{_id}}">
-    <div class="modules-group left-modules">
-      <div class="inner">
-      {{#each leftPostModules}}
-        <div class="{{moduleClass}}">
-          {{> UI.dynamic template=getTemplate data=..}}
-        </div>
-      {{/each}}
-      </div>
-    </div>
-    <div class="modules-group center-modules">
-      <div class="inner">
-      {{#each centerPostModules}}
-        <div class="{{moduleClass}}">
-          {{> UI.dynamic template=getTemplate data=..}}
-        </div>
-      {{/each}}
-      </div>
-    </div>
-    <div class="modules-group right-modules">
-      <div class="inner">
-      {{#each rightPostModules}}
-        <div class="{{moduleClass}}">
-          {{> UI.dynamic template=getTemplate data=..}}
-        </div>
-      {{/each}}
-      </div>
-    </div>
-  </div>
+  <article class="well post module {{rankClass}} {{#if sticky}}sticky{{/if}} {{inactiveClass}} {{_id}}">
+           <!-- mobile devices -->
+           <div class="row visible-xs-block">
+               <div class="col-xs-2">*</div>
+               <div class="col-xs-8">title</div>
+               <div class="col-xs-2">more</div>
+                <!-- todo: share on bottom -->
+           </div>
+           <!-- desktop devices -->
+           <div class="row hidden-xs">
+               <!-- rank -->
+               <div class="col-sm-1">{{oneBasedRank}}</div>
+               <!-- votes -->
+               <div class="col-sm-1">
+                  <!-- post_upvote.html-->
+                  {{#each leftPostModules}}
+                     <div class="{{moduleClass}}">
+                      {{> UI.dynamic template=getTemplate data=..}}
+                    </div>
+                  {{/each}}
+               </div>
+               <!-- content -->
+               <div class="col-sm-6">
+                    <!-- post_content -->
+                        <!-- post_title.html -->
+                        <!-- post_meta.html -->
+                    <!-- post_domain.html -->
+                    
+                    <!-- post_action.html ?? -->
+                    <!-- post_admin.html -->
+
+                     {{#each centerPostModules}}
+                        <div class="{{moduleClass}}">
+                          {{> UI.dynamic template=getTemplate data=..}}
+                        </div>
+                      {{/each}}
+                    
+               </div>
+               <div class="col-sm-2">cat</div>
+               <div class="col-sm-1">share</div>
+               <div class="col-sm-1">
+                  <!-- post_discuss.html -->
+                   <a class="discuss-link go-to-comments" href="/posts/{{_id}}">
+                      <i class="icon-comment"></i>
+                      <span class="count">{{comments}}</span>
+                      <span class="action">{{i18n 'Discuss'}}
+                      </span>
+                    </a>
+               </div>
+                   <!-- todo: share as popup -->
+           </div>
+        </article>
 </template>
