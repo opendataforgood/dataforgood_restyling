@@ -1,0 +1,45 @@
+
+
+@mixin textsModule {
+
+	.font-text-paragraph {
+		@extend %futura-pt-book;
+		font-size: $fontSizeXL;
+		color: black !important;
+	}
+
+	.font-text-input {
+		@extend %futura-pt-book;
+		font-size: $fontSizeXXL;
+		color: black !important;
+		-webkit-input-placeholder: black;
+		-moz-placeholder:black;
+		-ms-input-placeholder:black;
+	}
+
+	.font-text-claim {
+		@extend %futura-pt-book;
+		font-size: $fontSizeS;
+		color: white;
+	}
+
+	.font-text-post {
+		@extend %futura-pt-heavy;
+		font-size: $fontSizeXXXL;
+		color: white;
+	}
+
+	.font-text-sign {
+		@extend %futura-pt-heavy;
+		font-size: $fontSizeXL;
+		color: black;
+	}
+
+	.font-text-title {
+		@extend %futura-pt-heavy;
+		font-size: $fontSizeXXL;
+		color: black;
+	}
+
+
+}

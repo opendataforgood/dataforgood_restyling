@@ -1,0 +1,6 @@
+
+@import "abstracts/fonts";
+
+@mixin abstracts {
+		@include fontsAbstract;
+}

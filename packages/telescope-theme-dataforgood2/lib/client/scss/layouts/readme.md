@@ -1,0 +1,1 @@
+/* intended to define site main architecture. scaffolds or other wireframe components */

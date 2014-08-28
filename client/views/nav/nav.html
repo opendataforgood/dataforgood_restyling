@@ -1,5 +1,5 @@
 <template name="nav">
-    <div class="container">
+    <div class="container header">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -8,31 +8,31 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Data For Good</a>
+            <a class="navbar-brand" href="http://dataforgood.co"><img src="img/logo.png" class="logo" /></a>
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            
-            <ul class="nav navbar-nav navbar-right">
+         <ul class="nav navbar-nav navbar-right font-text-sign sign-menu">
                {{#if isLoggedIn}}
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{i18n "Profile"}} <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="{{profileUrl}}">{{i18n "View Profile"}}</a></li>
-                        <li><a href="/sign-out">{{i18n "Sign Out"}}</a></li>
+                        <li><a class="lnk" href="{{profileUrl}}">{{i18n "View Profile"}}</a></li>
+                        <li><a class="lnk" href="/sign-out">{{i18n "Sign Out"}}</a></li>
                      </ul>
                 </li>
                 {{else}}
-                <li><a href="/sign-up">{{i18n "Sign Up"}}</a></li>
-                <li><a href="/sign-in">{{i18n "Sign In"}}</a></li>
+                <li><a class="lnk" href="/sign-up">{{i18n "Sign up"}}</a></li>
+                <li><a class="lnk" href="/sign-in">{{i18n "Sign in"}}</a></li>
                 {{/if}}
             </ul>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse input-form-wrapper" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form input-search" role="search">
+                <i class="glyphicon glyphicon-search" style="font-size: 2rem; top:0.71rem"></i>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search a project">
+                </div>
+                
+            </form>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container -->
 </template>

@@ -1,0 +1,9 @@
+
+@mixin headlinesModule {
+
+	.h2 {
+		@extend %futura-pt-book;
+		font-size:4.71rem;
+		color: white;
+	}
+}

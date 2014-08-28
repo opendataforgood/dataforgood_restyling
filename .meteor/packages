@@ -29,9 +29,7 @@ telescope-rss
 telescope-api
 jquery-hotkeys
 marked
-bootstrap3-datepicker
 telescope-module-share
-subs-manager
 telescope-module-embedly
 handlebars-server
 npm
@@ -41,4 +39,5 @@ cookies
 telescope-newsletter
 accounts-entry
 bootstrap-3
-telescope-theme-dataforgood
+telescope-theme-dataforgood2
+meteorhacks:subs-manager

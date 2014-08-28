@@ -1,0 +1,41 @@
+
+@mixin placeholder($color: #777777) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &:-moz-placeholder {
+    color: $color;
+  }
+  &.placeholder {
+    color: $color;
+  }
+}
+
+@mixin formsModule {
+
+	textarea, input[type="text"], input[type="password"], input[type="datetime"],
+  input[type="datetime-local"], input[type="date"], input[type="month"],
+  input[type="time"], input[type="week"], input[type="number"],
+  input[type="email"], input[type="url"], input[type="search"],
+  input[type="tel"], input[type="color"], .uneditable-input  {
+    @include placeholder($grey-light);
+    border: 0;
+    box-shadow: none;
+    margin-left: 1rem;
+    &:focus {
+    
+    }
+  }
+
+  .input-search {
+    margin-left: auto;
+    margin-right: auto;
+    width: 21.48rem;
+    margin-top:0;
+    margin-bottom:0;
+  }
+
+  .input-form-wrapper {
+    line-height: 7rem;
+  }
+}

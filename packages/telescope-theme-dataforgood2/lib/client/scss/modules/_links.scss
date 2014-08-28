@@ -1,0 +1,20 @@
+@mixin linksModule {
+
+	%default-link {
+	 
+	  display: inline-block;
+	  font-weight: bold;
+	  color: black;
+	  &:active, &:hover, &:focus {
+	    text-decoration: none;
+	    color: #3c3c3c;
+	  }
+	}
+
+  .lnk {
+	  @extend %default-link;
+	  color: black !important;
+	  margin-bottom: 15px;
+	}
+	
+}
