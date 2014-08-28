@@ -1,0 +1,63 @@
+@mixin fontsAbstract {
+
+	%futura-pt-light {
+		font-family: "futura-pt",sans-serif;
+		font-style: normal;
+		font-weight: 300;
+	}
+
+	%futura-pt-light-italic {
+		font-family: "futura-pt",sans-serif;
+		font-style: italic;
+		font-weight: 300;
+	}
+
+	%futura-pt-book {
+		font-family: "futura-pt",sans-serif;
+		font-style: normal;
+		font-weight: 400;
+	}
+
+	%futura-pt-book-italic {
+		font-family: "futura-pt",sans-serif;
+		font-style: italic;
+		font-weight: 400;
+	}
+
+	%futura-pt-medium {
+		font-family: "futura-pt",sans-serif;
+		font-style: normal;
+		font-weight: 500;
+	}
+
+	%futura-pt-medium-italic {
+		font-family: "futura-pt",sans-serif;
+		font-style: italic;
+		font-weight: 500;
+	}
+
+	%futura-pt-heavy {
+		font-family: "futura-pt",sans-serif;
+		font-style: normal;
+		font-weight: 700;
+	} 
+
+	%futura-pt-heavy-italic {
+		font-family: "futura-pt",sans-serif;
+		font-style: italic;
+		font-weight: 700;
+	}
+
+	%futura-extra-bold {
+		font-family: "futura-pt",sans-serif;
+		font-style: normal;
+		font-weight: 800;
+	}
+
+	%futura-extra-bold-italic {
+		font-family: "futura-pt",sans-serif;
+		font-style: italic;
+		font-weight: 800;
+	}
+
+}

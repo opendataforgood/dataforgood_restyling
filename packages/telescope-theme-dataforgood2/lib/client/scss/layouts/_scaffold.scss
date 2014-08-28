@@ -1,0 +1,54 @@
+ /* scaffold */
+
+@mixin scaffoldLayout {
+
+	html, body, header {
+		font-size: $fontSizeL; //use for rem unity calculations
+		background-color: white;
+	}
+
+	.navbar-default {
+		background-color: white;
+	} 
+
+	.header {
+		height: 7rem;
+		background-color: white;
+
+		& .sign-menu {
+			margin-top:1.4rem
+		}
+		& .logo {
+			margin-top:1.4rem
+		}
+	}
+
+	.customtron {
+		background-color: white;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-image: url('/img/jumbotron.jpg');
+		height: 37.5rem;
+		position: relative
+	}
+
+	.claim_container {
+		position: absolute;
+		height: 350px;
+		top: 50%;
+		margin-top: -175px;
+		left: 50%;
+		@media (min-width: 768px) {
+			margin-left: -375px;
+		}
+		@media (min-width: 992px) {
+			margin-left: -485px;
+		}	
+		@media (min-width: 1200px) {
+			margin-left: -585px;
+		}	
+		
+	}
+
+}

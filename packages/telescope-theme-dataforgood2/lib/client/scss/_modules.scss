@@ -1,0 +1,15 @@
+
+@import "modules/links"
+				,"modules/forms"
+				,"modules/headlines"
+				,"modules/text"
+				,"modules/buttons";
+
+@mixin modules {
+	
+		@include linksModule;
+		@include formsModule;
+		@include headlinesModule;
+		@include textsModule;
+		@include buttonsModule;
+}

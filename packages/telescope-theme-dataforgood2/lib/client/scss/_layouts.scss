@@ -1,0 +1,8 @@
+/* layouts */
+
+@import "layouts/scaffold";
+
+@mixin layouts {
+
+		@include scaffoldLayout;
+}
