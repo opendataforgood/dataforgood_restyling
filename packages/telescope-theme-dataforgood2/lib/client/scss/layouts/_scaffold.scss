@@ -9,18 +9,25 @@
 
 	.navbar-default {
 		background-color: white;
-	} 
+	}
+
+    .navbar-inner {
+      text-align: center;
+    }
 
 	.header {
-		height: 7rem;
+		//height: 7rem;
 		background-color: white;
 
 		& .sign-menu {
 			margin-top:1.4rem
 		}
 		& .logo {
-			margin-top:1.4rem
+            @media (min-width: 768px) {
+               margin-top:1.4rem
+            }
 		}
+
 	}
 
 	.customtron {
@@ -30,23 +37,42 @@
 		-o-background-size: cover;
 		background-image: url('/img/jumbotron.jpg');
 		height: 37.5rem;
-		position: relative
+		position: relative;
+
+        & .claim {
+          @media (max-width: 320px) {
+            display: none;
+          }
+        }
 	}
 
 	.claim_container {
 		position: absolute;
 		height: 350px;
-		top: 50%;
-		margin-top: -175px;
-		left: 50%;
+        left: 0;
+        @media (min-width: 600px) {
+          left: 50%;
+          top: 50%;
+          margin-top: -175px;
+          margin-left: -285px;
+        }
 		@media (min-width: 768px) {
 			margin-left: -375px;
+            left: 50%;
+            top: 50%;
+            margin-top: -175px;
 		}
 		@media (min-width: 992px) {
 			margin-left: -485px;
+            left: 50%;
+            top: 50%;
+            margin-top: -175px;
 		}	
 		@media (min-width: 1200px) {
 			margin-left: -585px;
+            left: 50%;
+            top: 50%;
+            margin-top: -175px;
 		}	
 		
 	}

@@ -27,7 +27,7 @@
     }
   }
 
-  .input-search {
+  .form-search {
     margin-left: auto;
     margin-right: auto;
     width: 21.48rem;
@@ -35,7 +35,13 @@
     margin-bottom:0;
   }
 
+  .input-search {
+     display:inline-block;
+  }
+
   .input-form-wrapper {
     line-height: 7rem;
+    background-color: white;
+    z-index:100;
   }
 }

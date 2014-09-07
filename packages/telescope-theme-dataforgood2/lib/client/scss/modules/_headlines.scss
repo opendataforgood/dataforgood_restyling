@@ -3,7 +3,13 @@
 
 	.h2 {
 		@extend %futura-pt-book;
-		font-size:4.71rem;
 		color: white;
+        @media (min-width: 320px) {
+          font-size:3.71rem;
+        }
+        @media (min-width: 768px) {
+          font-size:4.71rem;
+        }
+
 	}
 }

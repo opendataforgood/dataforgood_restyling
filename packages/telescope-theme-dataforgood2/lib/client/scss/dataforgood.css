@@ -1,0 +1,198 @@
+/* data for good main scss */
+/* settings */
+/* layouts */
+/* scaffold */
+.h2, .font-text-paragraph, .font-text-input, .font-text-claim {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 400; }
+
+.font-text-post, .font-text-sign, .font-text-title {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 700; }
+
+html, body, header {
+  font-size: 14px;
+  background-color: white; }
+
+.navbar-default {
+  background-color: white; }
+
+.navbar-inner {
+  text-align: center; }
+
+.header {
+  background-color: white; }
+  .header .sign-menu {
+    margin-top: 1.4rem; }
+  @media (min-width: 768px) {
+    .header .logo {
+      margin-top: 1.4rem; } }
+
+.customtron {
+  background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-image: url("/img/jumbotron.jpg");
+  height: 37.5rem;
+  position: relative; }
+  @media (max-width: 320px) {
+    .customtron .claim {
+      display: none; } }
+
+.claim_container {
+  position: absolute;
+  height: 350px;
+  left: 0; }
+  @media (min-width: 600px) {
+    .claim_container {
+      left: 50%;
+      top: 50%;
+      margin-top: -175px;
+      margin-left: -285px; } }
+  @media (min-width: 768px) {
+    .claim_container {
+      margin-left: -375px;
+      left: 50%;
+      top: 50%;
+      margin-top: -175px; } }
+  @media (min-width: 992px) {
+    .claim_container {
+      margin-left: -485px;
+      left: 50%;
+      top: 50%;
+      margin-top: -175px; } }
+  @media (min-width: 1200px) {
+    .claim_container {
+      margin-left: -585px;
+      left: 50%;
+      top: 50%;
+      margin-top: -175px; } }
+
+.lnk {
+  display: inline-block;
+  font-weight: bold;
+  color: black; }
+  .lnk:active, .lnk:hover, .lnk:focus {
+    text-decoration: none;
+    color: #3c3c3c; }
+
+.lnk {
+  color: black !important;
+  margin-bottom: 15px; }
+
+textarea, input[type="text"], input[type="password"], input[type="datetime"],
+input[type="datetime-local"], input[type="date"], input[type="month"],
+input[type="time"], input[type="week"], input[type="number"],
+input[type="email"], input[type="url"], input[type="search"],
+input[type="tel"], input[type="color"], .uneditable-input {
+  border: 0;
+  box-shadow: none;
+  margin-left: 1rem; }
+  textarea::-webkit-input-placeholder, input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="datetime"]::-webkit-input-placeholder,
+  input[type="datetime-local"]::-webkit-input-placeholder, input[type="date"]::-webkit-input-placeholder, input[type="month"]::-webkit-input-placeholder,
+  input[type="time"]::-webkit-input-placeholder, input[type="week"]::-webkit-input-placeholder, input[type="number"]::-webkit-input-placeholder,
+  input[type="email"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder,
+  input[type="tel"]::-webkit-input-placeholder, input[type="color"]::-webkit-input-placeholder, .uneditable-input::-webkit-input-placeholder {
+    color: #e9e9e9; }
+  textarea:-moz-placeholder, input[type="text"]:-moz-placeholder, input[type="password"]:-moz-placeholder, input[type="datetime"]:-moz-placeholder,
+  input[type="datetime-local"]:-moz-placeholder, input[type="date"]:-moz-placeholder, input[type="month"]:-moz-placeholder,
+  input[type="time"]:-moz-placeholder, input[type="week"]:-moz-placeholder, input[type="number"]:-moz-placeholder,
+  input[type="email"]:-moz-placeholder, input[type="url"]:-moz-placeholder, input[type="search"]:-moz-placeholder,
+  input[type="tel"]:-moz-placeholder, input[type="color"]:-moz-placeholder, .uneditable-input:-moz-placeholder {
+    color: #e9e9e9; }
+  textarea.placeholder, input[type="text"].placeholder, input[type="password"].placeholder, input[type="datetime"].placeholder,
+  input[type="datetime-local"].placeholder, input[type="date"].placeholder, input[type="month"].placeholder,
+  input[type="time"].placeholder, input[type="week"].placeholder, input[type="number"].placeholder,
+  input[type="email"].placeholder, input[type="url"].placeholder, input[type="search"].placeholder,
+  input[type="tel"].placeholder, input[type="color"].placeholder, .uneditable-input.placeholder {
+    color: #e9e9e9; }
+
+.form-search {
+  margin-left: auto;
+  margin-right: auto;
+  width: 21.48rem;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.input-search {
+  display: inline-block; }
+
+.input-form-wrapper {
+  line-height: 7rem;
+  background-color: white;
+  z-index: 100; }
+
+.h2 {
+  color: white; }
+  @media (min-width: 320px) {
+    .h2 {
+      font-size: 3.71rem; } }
+  @media (min-width: 768px) {
+    .h2 {
+      font-size: 4.71rem; } }
+
+.font-text-paragraph {
+  font-size: 16px;
+  color: black !important; }
+
+.font-text-input {
+  font-size: 20px;
+  color: black !important;
+  -webkit-input-placeholder: black;
+  -moz-placeholder: black;
+  -ms-input-placeholder: black; }
+
+.font-text-claim {
+  font-size: 10px;
+  color: white; }
+
+.font-text-post {
+  font-size: 28px;
+  color: white; }
+
+.font-text-sign {
+  font-size: 16px;
+  color: black; }
+
+.font-text-title {
+  font-size: 20px;
+  color: black; }
+
+.btn_post {
+  border: 0px;
+  border-radius: 0;
+  width: 19.42rem;
+  height: 56px;
+  /* gradient */
+  background: #7abcff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7abcff), color-stop(44%, #60abf8), color-stop(100%, #4096ee));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 );
+  /* IE6-9 */
+  /* TODO it make responsive */
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+.btn-toggle:focus {
+  background-color: black; }
+
+.navbar.center .navbar-inner {
+  text-align: center; }
+
+.navbar.center .navbar-inner .nav {
+  float: none;
+  display: inline-block; }
