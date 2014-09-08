@@ -35,11 +35,35 @@
 		color: black;
 	}
 
+    .font-text-ranking {
+      @extend %futura-pt-heavy;
+      font-size: $fontSizeXXL;
+      color: black;
+    }
+
 	.font-text-title {
 		@extend %futura-pt-heavy;
 		font-size: $fontSizeXXL;
 		color: black;
 	}
+
+    .font-text-post-title {
+      @extend %futura-extra-bold;
+      font-size: $fontSizeXXXL;
+      color: black;
+    }
+
+    .font-text-post-body {
+      @extend %futura-pt-book;
+      font-size: $fontSizeXXL;
+      color: $grey-dark ;
+    }
+
+    .font-text-post-categories {
+      @extend %futura-pt-book;
+      font-size: $fontSizeXXL;
+      color: white;
+    }
 
 
 }

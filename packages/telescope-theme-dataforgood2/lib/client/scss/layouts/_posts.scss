@@ -1,0 +1,58 @@
+/* layout scaffold for posts */
+
+@mixin postsLayout {
+
+  .post-container {
+    background-color: $grey-lighter;
+  }
+
+  .vote-container {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .icon-star {
+    font-size: 3rem;
+    vertical-align: middle;
+    color: $blue;
+    &.voted {
+      color: $blue-light;
+      content: "\e006"; //filled star
+    }
+    &.not-voted{
+      color: $blue-light;
+      content: "\e007"; //empty star
+    }
+  }
+
+  .post-rank {
+    font-size: 2rem;
+    display:  inline-block;
+    vertical-align: middle;
+  }
+
+  .post-title {
+    display: block;
+  }
+
+  .post-body {
+    display: block;
+  }
+
+  .post-domain {
+    display: inline-block;
+  }
+
+  .edit-link {
+    display: inline-block;
+  }
+
+  .post-categories {
+    display: block;
+    background-color: $grey;
+  & .selected {
+    background-color: $orange;
+  }
+  }
+
+}

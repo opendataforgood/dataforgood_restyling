@@ -1,16 +1,35 @@
 /* data for good main scss */
 /* settings */
 /* layouts */
-/* scaffold */
-.h2, .font-text-paragraph, .font-text-input, .font-text-claim {
+/* lyout scaffold for root elements, navbar, header and jumbotron */
+/* layout scaffold for posts */
+.h2, .font-text-paragraph, .font-text-input, .font-text-claim, .font-text-post-body, .font-text-post-categories {
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 400; }
 
-.font-text-post, .font-text-sign, .font-text-title {
+.font-text-post, .font-text-sign, .font-text-ranking, .font-text-title {
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 700; }
+
+.font-text-post-title {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 800; }
+
+.v-middle {
+  display: table;
+  width: 100%; }
+
+.v-middle-child {
+  display: table-cell;
+  vertical-align: middle; }
+
+.v-middle-child-col {
+  display: inline-block;
+  vertical-align: middle;
+  float: none !important; }
 
 html, body, header {
   font-size: 14px;
@@ -29,6 +48,9 @@ html, body, header {
   @media (min-width: 768px) {
     .header .logo {
       margin-top: 1.4rem; } }
+  .header .icon-search {
+    font-size: 2rem;
+    top: 0.71rem; }
 
 .customtron {
   background-color: white;
@@ -70,6 +92,47 @@ html, body, header {
       left: 50%;
       top: 50%;
       margin-top: -175px; } }
+
+.post-container {
+  background-color: #f6f6f6; }
+
+.vote-container {
+  display: inline-block;
+  vertical-align: middle; }
+
+.icon-star {
+  font-size: 3rem;
+  vertical-align: middle;
+  color: black; }
+  .icon-star.voted {
+    color: #8cc2d9;
+    content: "\e006"; }
+  .icon-star.not-voted {
+    color: #8cc2d9;
+    content: "\e007"; }
+
+.post-rank {
+  font-size: 2rem;
+  display: inline-block;
+  vertical-align: middle; }
+
+.post-title {
+  display: block; }
+
+.post-body {
+  display: block; }
+
+.post-domain {
+  display: inline-block; }
+
+.edit-link {
+  display: inline-block; }
+
+.post-categories {
+  display: block;
+  background-color: #d2d2d2; }
+  .post-categories .selected {
+    background-color: #f49600; }
 
 .lnk {
   display: inline-block;
@@ -157,9 +220,25 @@ input[type="tel"], input[type="color"], .uneditable-input {
   font-size: 16px;
   color: black; }
 
+.font-text-ranking {
+  font-size: 20px;
+  color: black; }
+
 .font-text-title {
   font-size: 20px;
   color: black; }
+
+.font-text-post-title {
+  font-size: 28px;
+  color: black; }
+
+.font-text-post-body {
+  font-size: 20px;
+  color: #3c3c3c; }
+
+.font-text-post-categories {
+  font-size: 20px;
+  color: white; }
 
 .btn_post {
   border: 0px;
@@ -189,6 +268,10 @@ input[type="tel"], input[type="color"], .uneditable-input {
 
 .btn-toggle:focus {
   background-color: black; }
+
+.well {
+  background-color: white;
+  border-radius: 0; }
 
 .navbar.center .navbar-inner {
   text-align: center; }

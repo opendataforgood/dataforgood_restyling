@@ -1,8 +1,10 @@
 /* layouts */
 
-@import "layouts/scaffold";
+@import "layouts/scaffold",
+        "layouts/posts";
 
 @mixin layouts {
 
 		@include scaffoldLayout;
+        @include postsLayout;
 }

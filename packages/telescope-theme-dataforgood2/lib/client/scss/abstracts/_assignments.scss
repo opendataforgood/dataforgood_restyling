@@ -1,0 +1,21 @@
+
+@mixin assignmentsAbstract {
+
+  .v-middle {
+    display: table;
+    width: 100%;
+
+  }
+
+  .v-middle-child {
+      display: table-cell;
+      vertical-align: middle;
+  }
+
+  .v-middle-child-col {
+      display: inline-block;
+      vertical-align: middle;
+      float: none !important;
+  }
+
+}

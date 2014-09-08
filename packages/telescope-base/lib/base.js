@@ -99,10 +99,10 @@ postModules = [
     template: 'postUpvote',
     position: 'left-left'
   },
-  {
-    template: 'postActions',
-    position: 'left-right'
-  },
+//  { /* disabled till finish restyling - Vicens */
+//    template: 'postActions',
+//    position: 'left-right'
+//  },
   {
     template: 'postContent', 
     position: 'center-center'
@@ -118,10 +118,6 @@ postHeading = [
     template: 'postTitle',
     order: 1
   },
-  {
-    template: 'postDomain', 
-    order: 5
-  }
 ]
 
 postMeta = [
@@ -132,7 +128,11 @@ postMeta = [
   {
     template: 'postCommentsLink',
     order: 3
-  },  
+  },
+  {
+        template: 'postDomain',
+        order: 5
+  },
   {
     template: 'postAdmin', 
     order: 5

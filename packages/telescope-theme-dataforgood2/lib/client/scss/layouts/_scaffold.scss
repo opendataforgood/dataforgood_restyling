@@ -1,4 +1,6 @@
- /* scaffold */
+ /* lyout scaffold for root elements, navbar, header and jumbotron */
+
+
 
 @mixin scaffoldLayout {
 
@@ -27,6 +29,9 @@
                margin-top:1.4rem
             }
 		}
+        & .icon-search{
+          font-size: 2rem; top:0.71rem;
+        }
 
 	}
 
@@ -76,9 +81,5 @@
 		}	
 		
 	}
-
-  .post-container {
-    background-color: $grey-light;
-  }
 
 }

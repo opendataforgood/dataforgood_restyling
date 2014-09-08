@@ -3,7 +3,8 @@
 				,"modules/forms"
 				,"modules/headlines"
 				,"modules/text"
-				,"modules/buttons";
+				,"modules/buttons"
+                ,"modules/wells";
 
 @mixin modules {
 	
@@ -12,4 +13,5 @@
 		@include headlinesModule;
 		@include textsModule;
 		@include buttonsModule;
+        @include wellsModule;
 }
