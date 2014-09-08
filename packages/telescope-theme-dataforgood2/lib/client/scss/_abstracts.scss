@@ -1,6 +1,8 @@
 
-@import "abstracts/fonts";
+@import "abstracts/fonts",
+        "abstracts/assignments";
 
 @mixin abstracts {
 		@include fontsAbstract;
+        @include assignmentsAbstract;
 }

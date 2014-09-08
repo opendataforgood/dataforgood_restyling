@@ -4,5 +4,6 @@
     {{#if can_edit}}
       | <a href="/posts/{{_id}}/edit" class="edit-link goto-edit">Edit</a>
     {{/if}}
+      {{#if url}}<span class="post-domain">{{domain}}</span>{{/if}}
   </div>
 </template>

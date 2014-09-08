@@ -1,7 +1,17 @@
 <template name="postDiscuss">
-  <a class="discuss-link go-to-comments" href="/posts/{{_id}}">
-    <i class="icon-comment"></i>
-    <span class="count">{{comments}}</span>
-    <span class="action">{{i18n 'Discuss'}}</span>
-  </a>
+    <div class="col-sm-1 v-middle-child-col">
+        {{#each postRightCategories}}
+        {{> UI.dynamic template=getTemplate data=..}}
+        {{/each}}
+    </div>
+    <div class="col-sm-1 v-middle-child-col"></div>
+    <div class="col-sm-1 v-middle-child-col">
+
+        <a class="discuss-link go-to-comments" href="/posts/{{_id}}">
+            <i class="icon-comment"></i>
+            <span class="count">{{comments}}</span>
+                      <span class="action">{{i18n 'Discuss'}}
+                      </span>
+        </a>
+    </div>
 </template>

@@ -1,53 +1,85 @@
 /* data for good main scss */
 /* settings */
 /* layouts */
-/* scaffold */
+/* lyout scaffold for root elements, navbar, header and jumbotron */
+/* layout scaffold for posts */
 /* line 15, ../scss/abstracts/_fonts.scss */
-.h2, .font-text-paragraph, .font-text-input, .font-text-claim {
+.h2, .font-text-paragraph, .font-text-input, .font-text-claim, .font-text-post-body, .font-text-post-categories {
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 400;
 }
 
 /* line 39, ../scss/abstracts/_fonts.scss */
-.font-text-post, .font-text-sign, .font-text-title {
+.font-text-post, .font-text-sign, .font-text-ranking, .font-text-title {
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 700;
 }
 
-/* line 5, ../scss/layouts/_scaffold.scss */
+/* line 51, ../scss/abstracts/_fonts.scss */
+.font-text-post-title {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+}
+
+/* line 4, ../scss/abstracts/_assignments.scss */
+.v-middle {
+  display: table;
+  width: 100%;
+}
+
+/* line 10, ../scss/abstracts/_assignments.scss */
+.v-middle-child {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 15, ../scss/abstracts/_assignments.scss */
+.v-middle-child-col {
+  display: inline-block;
+  vertical-align: middle;
+  float: none !important;
+}
+
+/* line 7, ../scss/layouts/_scaffold.scss */
 html, body, header {
   font-size: 14px;
   background-color: white;
 }
 
-/* line 10, ../scss/layouts/_scaffold.scss */
+/* line 12, ../scss/layouts/_scaffold.scss */
 .navbar-default {
   background-color: white;
 }
 
-/* line 14, ../scss/layouts/_scaffold.scss */
+/* line 16, ../scss/layouts/_scaffold.scss */
 .navbar-inner {
   text-align: center;
 }
 
-/* line 18, ../scss/layouts/_scaffold.scss */
+/* line 20, ../scss/layouts/_scaffold.scss */
 .header {
   background-color: white;
 }
-/* line 22, ../scss/layouts/_scaffold.scss */
+/* line 24, ../scss/layouts/_scaffold.scss */
 .header .sign-menu {
   margin-top: 1.4rem;
 }
 @media (min-width: 768px) {
-  /* line 25, ../scss/layouts/_scaffold.scss */
+  /* line 27, ../scss/layouts/_scaffold.scss */
   .header .logo {
     margin-top: 1.4rem;
   }
 }
+/* line 32, ../scss/layouts/_scaffold.scss */
+.header .icon-search {
+  font-size: 2rem;
+  top: 0.71rem;
+}
 
-/* line 33, ../scss/layouts/_scaffold.scss */
+/* line 38, ../scss/layouts/_scaffold.scss */
 .customtron {
   background-color: white;
   -webkit-background-size: cover;
@@ -58,20 +90,20 @@ html, body, header {
   position: relative;
 }
 @media (max-width: 320px) {
-  /* line 42, ../scss/layouts/_scaffold.scss */
+  /* line 47, ../scss/layouts/_scaffold.scss */
   .customtron .claim {
     display: none;
   }
 }
 
-/* line 49, ../scss/layouts/_scaffold.scss */
+/* line 54, ../scss/layouts/_scaffold.scss */
 .claim_container {
   position: absolute;
   height: 350px;
   left: 0;
 }
 @media (min-width: 600px) {
-  /* line 49, ../scss/layouts/_scaffold.scss */
+  /* line 54, ../scss/layouts/_scaffold.scss */
   .claim_container {
     left: 50%;
     top: 50%;
@@ -80,7 +112,7 @@ html, body, header {
   }
 }
 @media (min-width: 768px) {
-  /* line 49, ../scss/layouts/_scaffold.scss */
+  /* line 54, ../scss/layouts/_scaffold.scss */
   .claim_container {
     margin-left: -375px;
     left: 50%;
@@ -89,7 +121,7 @@ html, body, header {
   }
 }
 @media (min-width: 992px) {
-  /* line 49, ../scss/layouts/_scaffold.scss */
+  /* line 54, ../scss/layouts/_scaffold.scss */
   .claim_container {
     margin-left: -485px;
     left: 50%;
@@ -98,7 +130,7 @@ html, body, header {
   }
 }
 @media (min-width: 1200px) {
-  /* line 49, ../scss/layouts/_scaffold.scss */
+  /* line 54, ../scss/layouts/_scaffold.scss */
   .claim_container {
     margin-left: -585px;
     left: 50%;
@@ -107,9 +139,69 @@ html, body, header {
   }
 }
 
-/* line 80, ../scss/layouts/_scaffold.scss */
+/* line 5, ../scss/layouts/_posts.scss */
 .post-container {
-  background-color: #e9e9e9;
+  background-color: #f6f6f6;
+}
+
+/* line 9, ../scss/layouts/_posts.scss */
+.vote-container {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 14, ../scss/layouts/_posts.scss */
+.icon-star {
+  font-size: 3rem;
+  vertical-align: middle;
+  color: black;
+}
+/* line 18, ../scss/layouts/_posts.scss */
+.icon-star.voted {
+  color: #8cc2d9;
+  content: "\e006";
+}
+/* line 22, ../scss/layouts/_posts.scss */
+.icon-star.not-voted {
+  color: #8cc2d9;
+  content: "\e007";
+}
+
+/* line 28, ../scss/layouts/_posts.scss */
+.post-rank {
+  font-size: 2rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 34, ../scss/layouts/_posts.scss */
+.post-title {
+  display: block;
+}
+
+/* line 38, ../scss/layouts/_posts.scss */
+.post-body {
+  display: block;
+}
+
+/* line 42, ../scss/layouts/_posts.scss */
+.post-domain {
+  display: inline-block;
+}
+
+/* line 46, ../scss/layouts/_posts.scss */
+.edit-link {
+  display: inline-block;
+}
+
+/* line 50, ../scss/layouts/_posts.scss */
+.post-categories {
+  display: block;
+  background-color: #d2d2d2;
+}
+/* line 53, ../scss/layouts/_posts.scss */
+.post-categories .selected {
+  background-color: #f49600;
 }
 
 /* line 3, ../scss/modules/_links.scss */
@@ -237,9 +329,33 @@ input[type="tel"].placeholder, input[type="color"].placeholder, .uneditable-inpu
 }
 
 /* line 38, ../scss/modules/_text.scss */
+.font-text-ranking {
+  font-size: 20px;
+  color: black;
+}
+
+/* line 44, ../scss/modules/_text.scss */
 .font-text-title {
   font-size: 20px;
   color: black;
+}
+
+/* line 50, ../scss/modules/_text.scss */
+.font-text-post-title {
+  font-size: 28px;
+  color: black;
+}
+
+/* line 56, ../scss/modules/_text.scss */
+.font-text-post-body {
+  font-size: 20px;
+  color: #3c3c3c;
+}
+
+/* line 62, ../scss/modules/_text.scss */
+.font-text-post-categories {
+  font-size: 20px;
+  color: white;
 }
 
 /* line 3, ../scss/modules/_buttons.scss */
@@ -273,6 +389,12 @@ input[type="tel"].placeholder, input[type="color"].placeholder, .uneditable-inpu
 /* line 25, ../scss/modules/_buttons.scss */
 .btn-toggle:focus {
   background-color: black;
+}
+
+/* line 3, ../scss/modules/_wells.scss */
+.well {
+  background-color: white;
+  border-radius: 0;
 }
 
 /* line 12, ../scss/dataforgood.scss */
